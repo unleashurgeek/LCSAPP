@@ -3,7 +3,7 @@
 env:
     matrix:
     - ANDROID_SDKS=android-10 ANDROID_TARGET=android-10 ANDROID_ABI=armeabi
-    - ANDROID_SDKS=android-14 ANDROID_TARGET=android-14 ANDROID_ABI=armeabi
+    #- ANDROID_SDKS=android-14 ANDROID_TARGET=android-14 ANDROID_ABI=armeabi
     - ANDROID_SDKS=sysimg-16 ANDROID_TARGET=android-16 ANDROID_ABI=armeabi-v7a
     - ANDROID_SDKS=sysimg-19 ANDROID_TARGET=android-19 ANDROID_ABI=armeabi-v7a
 
@@ -11,6 +11,7 @@ language: android
 android:
     components:
     - build-tools-19.0.2
+    - android-14
     - $ANDROID_SDKS
     - $ANDROID_TARGET
     - $ANDROID_ABI
