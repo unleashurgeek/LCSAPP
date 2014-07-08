@@ -1,25 +1,21 @@
 # language: java
 # jdk: oraclejdk8
-language: android
-android:
-    components:
-    - build-tools-19.0.2
-    - android-10
-    - armeabi
-    - armeabi_v7a
-    - android-14
-    - android-16
-    - android-19
-    - sysimg-14
-    - sysimg-16
-    - sysimg-19
-
 env:
     matrix:
     - ANDROID_SDKS=android-10 ANDROID_TARGET=android-10 ANDROID_ABI=armeabi
     - ANDROID_SDKS=sysimg-14 ANDROID_TARGET=android-14 ANDROID_ABI=armeabi_v7a
     - ANDROID_SDKS=sysimg-16 ANDROID_TARGET=android-16 ANDROID_ABI=armeabi_v7a
     - ANDROID_SDKS=sysimg-19 ANDROID_TARGET=android-19 ANDROID_ABI=armeabi_v7a
+
+language: android
+android:
+    components:
+    - build-tools-19.0.2
+    - $ANDROID_SDKS
+    - $ANDROID_TARGET
+    - $ANDROID_ABI
+    licenses:
+    - android-sdk-license-5be876d5
     
 before_install:
     # Install base Android SDK
