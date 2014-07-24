@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="background1"
+        android:scaleType="center"
+        android:src="@drawable/background" />
+
+    <com.unleashurgeek.lcsapp.widgets.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="bottom"
+        sothree:dragView="@+id/layoutContent"
+        sothree:panelHeight="?android:attr/actionBarSize"
+        sothree:shadowHeight="4dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false" >
+
+            <com.unleashurgeek.lcsapp.home.HomeViewPager
+                android:id="@+id/homePager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <android.support.v4.view.PagerTitleStrip
+                    android:id="@+id/homeFragmentTitles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@color/actionbar_background"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="?android:attr/actionBarSize" />
+            </com.unleashurgeek.lcsapp.home.HomeViewPager>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/dragView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/data_background"
+            android:clickable="true"
+            android:focusable="false"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/schedule_background"
+                android:contentDescription="background"
+                android:gravity="bottom"
+                android:scaleType="center"
+                android:src="@drawable/background" />
+
+            <TextView
+                android:id="@+id/handle"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@color/data_background"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="Schedule"
+                android:textColor="@color/dark_text" />
+        </RelativeLayout>
+    </com.unleashurgeek.lcsapp.widgets.SlidingUpPanelLayout>
+
+</RelativeLayout>

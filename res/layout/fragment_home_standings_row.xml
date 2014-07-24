@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/data_background"
+    android:minHeight="52dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/standingsRowRank"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:textColor="@color/dark_text"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/standingsRowRankChange"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:typeface="sans" />
+
+    <ImageView
+        android:id="@+id/standingsRowTeamLogo"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:contentDescription="Team Logo"
+        android:padding="4dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/standingsRowTeamName"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/team_text"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/standingsRowWins"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/green"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/standingsRowLosses"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="8dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/red"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</TableRow>

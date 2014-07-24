@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/data_background"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/statType"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/title_background"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textColor="@color/team_text" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/data_background"
+        android:padding="24dp" >
+
+        <ImageView
+            android:id="@+id/statPlayerImage"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="24dp"
+            android:contentDescription="player Image"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/statData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/statPlayerImage"
+            android:textSize="30sp"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/statRole"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/statData"
+            android:layout_gravity="center"
+            android:layout_toRightOf="@+id/statPlayerImage"
+            android:paddingTop="5dp"
+            android:textColor="@color/team_text" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/title_background" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/statsTeamLogo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:layout_toLeftOf="@+id/statsPlayerName"
+            android:contentDescription="team Logo"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/statsPlayerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/team_text" />
+    </RelativeLayout>
+
+</LinearLayout>

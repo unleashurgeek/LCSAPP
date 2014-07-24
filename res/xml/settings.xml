@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:entries="@array/prefDefaultLeague"
+        android:entryValues="@array/prefDefaultLeagueValues"
+        android:key="defLeague"
+        android:summary="Select the Default league to appear when you start-up the app."
+        android:title="Default League"
+        android:defaultValue="@string/defaultLeague_default" />
+
+</PreferenceScreen>

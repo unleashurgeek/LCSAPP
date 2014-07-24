@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Maven Quickstart</string>
-    <string name="hello">Hello LCSAPP!</string>
+    <string name="app_name">LCS APP</string>
     <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
-
+    
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >North America</item>
+        <item >Europe</item>
+    </string-array>
+    
+    <string-array name="prefDefaultLeague">
+        <item name="NA">North America</item>
+        <item name="EU">Europe</item>
+    </string-array>
+    
+    <string-array name="prefDefaultLeagueValues">
+        <item name="NA">0</item>
+        <item name="EU">1</item>
+    </string-array>
+    
+    <string name="desc_list_item_icon">Item Icon</string>
 </resources>

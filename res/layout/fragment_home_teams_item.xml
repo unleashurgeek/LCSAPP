@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="86dp"
+    android:background="@color/data_background" >
+
+    <ImageView
+        android:id="@+id/teamLogo"
+        android:layout_width="78dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="12dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="Team Logo"
+        android:padding="8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_tsm" />
+
+    <TextView
+        android:id="@+id/teamName"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/teamLogo"
+        android:gravity="center"
+        android:textColor="@color/dark_text"
+        android:textSize="24sp" />
+
+</RelativeLayout>
